@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroSmart - Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>AgroSmart</h1>
+        </div>
+         <nav>
+            <a href="index.html">Início</a>
+        <a href="index3.html">Monitoramento</a>
+        <a href="index1.html">Relatórios</a>
+        <a href="index2.html">Contato</a>
+        </nav>
+    </header>
+
+    <section class="contact-hero">
+        <h2>Fale com a AgroSmart</h2>
+        <p>Estamos prontos para atender sua propriedade. Envie uma mensagem ou utilize nossos canais diretos.</p>
+    </section>
+
+    <section class="contact-main">
+        <div class="contact-grid">
+            
+            <div class="contact-form-card">
+                <h3>Envie uma Mensagem</h3>
+                <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso!');">
+                    <div class="form-group">
+                        <label for="nome">Nome completo</label>
+                        <input type="text" id="nome" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" placeholder="seuemail@dominio.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone">Telefone / WhatsApp</label>
+                            <input type="tel" id="telefone" placeholder="(00) 00000-0000" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="assunto">Assunto</label>
+                        <select id="assunto" required>
+                            <option value="">Selecione o assunto</option>
+                            <option value="orcamento">Solicitar Orçamento</option>
+                            <option value="suporte">Suporte Técnico</option>
+                            <option value="parceria">Parcerias Comerciais</option>
+                            <option value="outro">Outros</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" rows="4" placeholder="Como podemos ajudar sua lavoura?" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                </form>
+            </div>
+
+            <div class="contact-info-column">
+                <div class="info-card highlight-card">
+                    <div class="info-icon">💬</div>
+                    <div>
+                        <h4>Atendimento Rápido</h4>
+                        <p>Fale diretamente via WhatsApp.</p>
+                        <a href="#" class="btn-whatsapp">Iniciar Chat</a>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">📞</div>
+                    <div>
+                        <h4>Telefone</h4>
+                        <p>(11) 4004-8900</p>
+                        <small>Seg a Sex, 8h às 18h</small>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">✉️</div>
+                    <div>
+                        <h4>E-mail</h4>
+                        <p>contato@agrosmart.com.br</p>
+                        <small>Resposta em até 2 horas</small>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">📍</div>
+                    <div>
+                        <h4>Sede Técnica</h4>
+                        <p>Av. da Agricultura, 1000 - Polo Tecnológico</p>
+                        <small>São Paulo - SP</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <h2 class="title">Dúvidas Frequentes</h2>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <h4>Quanto tempo leva a instalação dos sensores?</h4>
+                <p>A instalação completa leva em média 24 a 48 horas, dependendo da extensão da área cultivada.</p>
+            </div>
+            <div class="faq-item">
+                <h4>O sistema funciona sem sinal de internet na fazenda?</h4>
+                <p>Sim. Nossos sensores utilizam comunicação via rádio LoraWAN local e sincronizam com a nuvem via Gateway 4G/Satélite.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Como é cobrado o suporte técnico?</h4>
+                <p>O suporte 24/7 e o monitoramento em tempo real já estão inclusos no plano de assinatura da plataforma.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Posso testar antes de contratar?</h4>
+                <p>Oferecemos uma demonstração guiada e um período de degustação de 14 dias para fazendas parceiras.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>AgroSmart © 2026 - Tecnologia para agricultura eficiente</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroSmart - Monitoramento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>AgroSmart</h1>
+        </div>
+
+         <nav>
+            <a href="index.html">Início</a>
+        <a href="index3.html">Monitoramento</a>
+        <a href="index1.html">Relatórios</a>
+        <a href="index2.html">Contato</a>
+        </nav>
+    </header>
+
+    <section class="monit-hero">
+        <h2>Monitoramento</h2>
+        <p>Acompanhe em tempo real as condições do solo, clima e funcionamento do sistema de irrigação.</p>
+    </section>
+
+    <!-- Cards Resumidos do Topo -->
+    <div class="summary-container">
+        <div class="summary-card">
+            <div class="summary-icon">🪴</div>
+            <div class="summary-info">
+                <span class="summary-title">UMIDADE DO SOLO</span>
+                <span class="summary-value green">32%</span>
+                <span class="summary-status green-text">IDEAL</span>
+                <span class="summary-time">ATUALIZADO Á 2 MIN</span>
+            </div>
+        </div>
+
+        <div class="summary-card">
+            <div class="summary-icon">🌡️</div>
+            <div class="summary-info">
+                <span class="summary-title">TEMPERATURA AR</span>
+                <span class="summary-value">28,5°C</span>
+                <span class="summary-status green-text">AGRADÁVEL</span>
+                <span class="summary-time">ATUALIZADO Á 2 MIN</span>
+            </div>
+        </div>
+
+        <div class="summary-card">
+            <div class="summary-icon">💨</div>
+            <div class="summary-info">
+                <span class="summary-title">UMIDADE DO AR</span>
+                <span class="summary-value">65%</span>
+                <span class="summary-status green-text">IDEAL</span>
+                <span class="summary-time">ATUALIZADO Á 2 MIN</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Painel de Umidade e Sistema de Irrigação -->
+    <section class="dashboard-grid">
+        <!-- Card 1: Gauge Umidade -->
+        <div class="dash-card">
+            <div class="dash-card-header">
+                <h3>Umidade do Solo</h3>
+                <span class="badge-dot"><span class="dot green"></span> Online</span>
+            </div>
+            <p class="subtitle">Última atualização: agora</p>
+
+            <div class="gauge-wrapper">
+                <div class="gauge" style="--percent: 69%;">
+                    <div class="gauge-center">
+                        <span class="gauge-value">69%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gauge-legend">
+                <span><span class="dot orange"></span> Baixa</span>
+                <span><span class="dot green"></span> Ideal</span>
+                <span><span class="dot blue"></span> Alta</span>
+            </div>
+        </div>
+
+        <!-- Card 2: Status Equipamentos -->
+        <div class="dash-card">
+            <div class="dash-card-header">
+                <h3>Sistema de Irrigação</h3>
+                <span class="badge-dot"><span class="dot green"></span> Ativo</span>
+            </div>
+            <p class="subtitle">Status dos Equipamentos</p>
+
+            <div class="equip-list">
+                <div class="equip-item">
+                    <div>
+                        <strong>Bomba Principal</strong>
+                        <p>Funcionando normalmente</p>
+                    </div>
+                    <span class="status-pill online">Online</span>
+                </div>
+
+                <div class="equip-item">
+                    <div>
+                        <strong>Setor 01</strong>
+                        <p>Irrigação automática</p>
+                    </div>
+                    <span class="status-pill ativo">Ativo</span>
+                </div>
+
+                <div class="equip-item">
+                    <div>
+                        <strong>Setor 02</strong>
+                        <p>Aguardando umidade</p>
+                    </div>
+                    <span class="status-pill aguardando">Aguardando</span>
+                </div>
+
+                <div class="equip-item">
+                    <div>
+                        <strong>Setor 03</strong>
+                        <p>Irrigação programada</p>
+                    </div>
+                    <span class="status-pill desligado">Desligado</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Condições Climáticas -->
+    <section class="climate-section">
+        <h2 class="section-title">Condições climáticas</h2>
+
+        <div class="climate-grid">
+            <div class="climate-card">
+                <span class="climate-icon">🌡️</span>
+                <div>
+                    <span class="climate-label">Temperatura</span>
+                    <span class="climate-val">26°C</span>
+                </div>
+            </div>
+
+            <div class="climate-card">
+                <span class="climate-icon">🌧️</span>
+                <div>
+                    <span class="climate-label">Precipitação</span>
+                    <span class="climate-val">2 mm</span>
+                </div>
+            </div>
+
+            <div class="climate-card">
+                <span class="climate-icon">💧</span>
+                <div>
+                    <span class="climate-label">Umidade do ar</span>
+                    <span class="climate-val">68%</span>
+                </div>
+            </div>
+
+            <div class="climate-card">
+                <span class="climate-icon">🍃</span>
+                <div>
+                    <span class="climate-label">Velocidade do vento</span>
+                    <span class="climate-val">12 km/h</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabela de Últimas Medições -->
+    <section class="table-section">
+        <div class="table-header-flex">
+            <div>
+                <h2>Últimas medições</h2>
+                <p>Dados coletados pelos sensores da fazenda.</p>
+            </div>
+            <button class="btn-refresh">Atualizar Dados</button>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Horário</th>
+                        <th>Umidade do solo</th>
+                        <th>Temperatura</th>
+                        <th>Irrigação</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>09:30</strong></td>
+                        <td class="highlight-cell"><strong>72%</strong></td>
+                        <td>26°C</td>
+                        <td>Automático</td>
+                        <td><span class="badge normal">Normal</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>09:00</strong></td>
+                        <td>68%</td>
+                        <td>25°C</td>
+                        <td>Automático</td>
+                        <td><span class="badge normal">Normal</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>08:30</strong></td>
+                        <td>70%</td>
+                        <td>25°C</td>
+                        <td>Ativa</td>
+                        <td><span class="badge normal">Normal</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>08:00</strong></td>
+                        <td>61%</td>
+                        <td>24°C</td>
+                        <td>Ativa</td>
+                        <td><span class="badge atencao">Atenção</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>07:30</strong></td>
+                        <td>58%</td>
+                        <td>24°C</td>
+                        <td>Ativa</td>
+                        <td><span class="badge atencao">Atenção</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Alertas do Sistema -->
+    <section class="alerts-section">
+        <h2 class="section-title-left">Alertas do sistema</h2>
+
+        <div class="alert-box warning">
+            <div class="alert-icon">⚠️</div>
+            <div>
+                <strong>Umidade abaixo do ideal no Setor 02</strong>
+                <p>O sistema recomenda iniciar a irrigação caso a umidade permaneça abaixo de 60%.</p>
+            </div>
+        </div>
+
+        <div class="alert-box success">
+            <div class="alert-icon">✅</div>
+            <div>
+                <strong>Sistema funcionando normalmente</strong>
+                <p>Todos os sensores estão conectados e enviando dados.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>AgroSmart © 2026 - Tecnologia para agricultura eficiente</p>
+    </footer>
+
+</body>
+
+</html>
